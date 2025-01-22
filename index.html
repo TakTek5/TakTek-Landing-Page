@@ -10,24 +10,42 @@
   <body>
     <!-- HEADER START -->
     <header class="header">
-      <div class="logo">
+      <nav class="navbar">
         <img
+          class="navbar-img"
           src="https://firebasestorage.googleapis.com/v0/b/sds-main-29a46.firebasestorage.app/o/images%2Flogo.png?alt=media&token=6defccae-3a0c-4333-80a8-1c1ef024c917"
           alt=""
           width="100%"
           height="100%"
         />
-      </div>
-      <ul class="menu">
-        <li>For Customers</li>
-        <li>For Service Providers</li>
-        <li>How it Works</li>
-        <li>Pricing</li>
-        <li>FAQ</li>
-        <li>
-          <button class="company-login">Company Login</button>
-        </li>
-      </ul>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#for-customers" class="nav-link">For Customers</a>
+          </li>
+          <li class="nav-item">
+            <a href="#for-service-providers" class="nav-link"
+              >For Service Providers</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#how-it-works" class="nav-link">How It Works</a>
+          </li>
+          <li class="nav-item">
+            <a href="#pricing" class="nav-link">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a href="#faq" class="nav-link">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <button class="company-login">Company Login</button>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
     </header>
     <!-- HEADER FINISH -->
 
@@ -59,7 +77,7 @@
     </div>
     <!-- CONTENT1 FINISH -->
     <!-- CUSTOMERS START -->
-    <div class="customers">
+    <div class="customers" id="for-customers">
       <h4>For Customers</h4>
       <h2 class="customers-title">
         Need Help Now? <br />
@@ -119,7 +137,7 @@
     <!-- CUSTOMERS FINISH -->
 
     <!-- SERVICE PROVIDERS START -->
-    <div class="service-providers">
+    <div class="service-providers" id="for-service-providers">
       <h4>For Service Providers</h4>
       <h2 class="service-providers-title">
         Stop Paying Thousands for Leads-
@@ -178,7 +196,7 @@
     </div>
     <!-- SERVICE PROVIDERS FINISH -->
     <!-- HOW IT WORKS START-->
-    <div class="how-it-works">
+    <div class="how-it-works" id="how-it-works">
       <h4>How it works</h4>
       <h2 class="how-it-works-title">
         3 Simple Steps <br />
@@ -223,7 +241,7 @@
     </div>
     <!-- HOW IT WORKS FINISH -->
     <!-- PRICING START -->
-    <div class="pricing">
+    <div class="pricing" id="pricing">
       <h4>Pricing</h4>
       <h2 class="pricing-title">
         Simple Pricing <br />
@@ -270,7 +288,7 @@
     <!-- PRICING FINISH -->
     <!-- FAQ START -->
 
-    <div class="faq">
+    <div class="faq" id="faq">
       <h4 class="faq-title">FAQ</h4>
       <div class="content-container">
         <div class="faq-container1">
@@ -379,5 +397,6 @@
       </div>
     </footer>
     <!-- FOOTER FINISH -->
+    <script src="./index.js"></script>
   </body>
 </html>

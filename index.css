@@ -4,28 +4,60 @@
 }
 
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  font-size: 24px;
-  margin-bottom: 100px;
+  width: 100%;
+  position: relative;
 }
-.logo {
-  flex: 1;
+.nav-item {
+  list-style: none;
 }
 
-.logo img {
-  height: 73px;
-  width: 290px;
+.nav-link {
+  color: #000000;
+  text-decoration: none;
+  transition: 0.7s ease;
+  font-size: 18px;
 }
-.menu {
+
+.navbar {
+  min-height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  list-style: none;
-  flex: 1;
+  padding: 0 24px;
 }
+.navbar-img {
+  height: 70px;
+  width: 290px;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+.nav-branding {
+  font-size: 2rem;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #000000;
+}
+
 .company-login {
   background-color: #ffffff;
   border: 1px solid #1d71bf;
@@ -41,7 +73,7 @@
   align-items: center;
   gap: 24px;
   width: 80%;
-  margin: auto;
+  margin: 50px auto;
 }
 .content1-text {
   width: 660px;
@@ -68,7 +100,7 @@
 }
 
 .content1-img-container {
-  height: 580px;
+  height: 500px;
   width: auto;
 }
 
@@ -494,6 +526,7 @@
   justify-content: space-between;
   margin-top: 50px;
   padding: 0px 50px;
+  color: #505050;
 }
 .copyright-section2 {
   gap: 100px;
@@ -506,21 +539,48 @@
   * {
     margin: 0;
     padding: 0;
-    max-width: 100%;
+    box-sizing: border-box;
   }
-  .header {
+
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .navbar-img {
+    height: 40px;
+    width: 160px;
+  }
+
+  .nav-menu {
+    position: fixed;
+    right: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #1d71bf;
     width: 100%;
+    text-align: center;
+    transition: 0.3s;
   }
-  .logo {
-    /* max-width: 150px; */
-    flex: 1;
+
+  .nav-item {
+    margin: 16px 0;
   }
-  .logo img {
-    max-width: 100%;
+
+  .nav-menu.active {
+    right: 0;
   }
-  .menu {
-    display: none;
-  }
+
   .content1 {
     display: flex;
     flex-wrap: wrap;
@@ -777,7 +837,9 @@
   }
   .collapsible-title {
     font-size: 16px;
+    list-style: none;
     font-weight: bold;
+    color: #000000;
   }
 
   .collapsible-text {
