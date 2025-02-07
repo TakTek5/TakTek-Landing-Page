@@ -22,6 +22,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /* width: 100%; */
 }
 .navbar-img {
   width: 250px;
@@ -31,6 +32,8 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 20px;
+  font-size: 20px;
+  margin: 0px 20px;
 }
 
 .nav-item {
@@ -39,7 +42,17 @@ body {
 
 .nav-link {
   text-decoration: none;
-  color: #000;
+  color: #000000;
+}
+
+.company-login {
+  background-color: #ffffff;
+  border: 1px solid #1d71bf;
+  color: #1d71bf;
+  font-size: 18px;
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-weight: bold;
 }
 
 .main-content {
@@ -52,7 +65,92 @@ body {
 
 .footer {
   grid-area: footer;
+  width: 100%;
+  margin: auto;
+}
+
+.footer-main-content {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
+}
+.footer-section1 {
+  width: 250px;
+}
+
+.footer-list {
+  list-style: none;
+}
+.footer-list li {
+  margin: 10px auto;
+  font-size: 18px;
+  font-weight: bold;
+}
+.email-label {
+  font-size: 18px;
+  color: #505050;
+  padding: 0;
+  margin: 0;
+}
+.email {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000000;
+  padding: 0;
+  margin: 0;
+}
+.phone-label {
+  font-size: 18px;
+  color: #505050;
+  padding: 0;
+  margin: 0;
+}
+.phone {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000000;
+  padding: 0;
+  margin: 0;
+}
+.footer-section4 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footer-button1 {
+  background-color: #1d71bf;
+  color: #ffffff;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-size: 18px;
+}
+.footer-button2 {
+  background-color: #1d71bf;
+  color: #ffffff;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-size: 18px;
+}
+.footer-button3 {
+  background-color: #ffffff;
+  color: #1d71bf;
+  border: 1px solid #1d71bf;
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-size: 18px;
+}
+.footer-copyright {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  padding: 0px 50px;
+  color: #505050;
+}
+.copyright-section2 {
+  gap: 100px;
+  display: flex;
+  justify-content: space-between;
+  color: #505050;
 }
