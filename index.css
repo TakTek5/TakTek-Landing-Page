@@ -66,6 +66,12 @@
   border-radius: 8px;
   padding: 12px 20px;
   font-weight: bold;
+  transition: background-color 0.25s ease-in;
+}
+.company-login:hover {
+  cursor: pointer;
+  background-color: #1d71bf;
+  color: #ffffff;
 }
 .content1 {
   display: flex;
@@ -511,6 +517,7 @@
   border-radius: 8px;
   padding: 12px 20px;
   font-size: 18px;
+  width: 100%;
 }
 .footer-button2 {
   background-color: #1d71bf;
@@ -519,6 +526,7 @@
   border-radius: 8px;
   padding: 12px 20px;
   font-size: 18px;
+  width: 100%;
 }
 .footer-button3 {
   background-color: #ffffff;
@@ -527,6 +535,20 @@
   border-radius: 8px;
   padding: 12px 20px;
   font-size: 18px;
+  width: 100%;
+  transition: background-color 0.25s ease-in;
+}
+
+.footer-button1:hover {
+  cursor: pointer;
+}
+.footer-button2:hover {
+  cursor: pointer;
+}
+.footer-button3:hover {
+  cursor: pointer;
+  background-color: #1d71bf;
+  color: #ffffff;
 }
 .footer-copyright {
   display: flex;
