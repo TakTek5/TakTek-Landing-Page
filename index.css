@@ -104,6 +104,10 @@
   border-radius: 8px;
   font-size: 18px;
 }
+.content1-button-container button:hover {
+  background-color: #137ece;
+  cursor: pointer;
+}
 
 .content1-img-container {
   height: 500px;
@@ -158,6 +162,11 @@
   margin-top: 20px;
 }
 
+.customers-list-button:hover {
+  background-color: #137ece;
+  cursor: pointer;
+}
+
 .service-providers {
   width: 80%;
   margin: auto;
@@ -188,6 +197,10 @@
   color: #ffffff;
   margin-top: 50px;
   font-size: 18px;
+}
+.service-providers-button:hover {
+  background-color: #137ece;
+  cursor: pointer;
 }
 .service-providers-card {
   width: 304px;
@@ -256,6 +269,10 @@
   font-size: 18px;
   border: none;
   border-radius: 8px;
+}
+.steps-buttons button:hover {
+  background-color: #137ece;
+  cursor: pointer;
 }
 .pricing {
   width: 80%;
@@ -363,6 +380,10 @@
   border-radius: 8px;
   padding: 12px 20px;
 }
+.pricing-cards-button1:hover {
+  background-color: #137ece;
+  cursor: pointer;
+}
 .pricing-cards-button2 {
   font-size: 18px;
   background-color: #ffffff;
@@ -370,6 +391,10 @@
   border: 1px solid #1d71bf;
   border-radius: 8px;
   padding: 12px 20px;
+}
+.pricing-cards-button2:hover {
+  background-color: #1d71bf;
+  color: #ffffff;
 }
 .faq {
   width: 80%;
@@ -410,6 +435,10 @@
   font-size: 18px;
   margin-right: 20px;
 }
+.faq-container1-button1:hover {
+  background-color: #137ece;
+  cursor: pointer;
+}
 .faq-container1-button2 {
   background-color: #ffffff;
   color: #1d71bf;
@@ -417,6 +446,11 @@
   border-radius: 8px;
   padding: 12px 20px;
   font-size: 18px;
+}
+.faq-container1-button2:hover {
+  background-color: #1d71bf;
+  color: #ffffff;
+  cursor: pointer;
 }
 
 .faq-container2 {
@@ -541,9 +575,11 @@
 
 .footer-button1:hover {
   cursor: pointer;
+  background-color: #137ece;
 }
 .footer-button2:hover {
   cursor: pointer;
+  background-color: #137ece;
 }
 .footer-button3:hover {
   cursor: pointer;
