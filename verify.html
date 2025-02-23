@@ -132,7 +132,6 @@
         const token = urlParams.get("token");
 
         const messageElement = document.getElementById("message");
-        const spinner = document.getElementById("spinner");
 
         if (!token) {
           messageElement.textContent = "Invalid verification link.";
@@ -153,7 +152,6 @@
           );
 
           const text = await response.text();
-          spinner.style.display = "none"; // Hide spinner after response
 
           if (response.ok) {
             messageElement.innerHTML = text;
@@ -163,7 +161,6 @@
             messageElement.classList.add("error");
           }
         } catch (err) {
-          spinner.style.display = "none";
           messageElement.textContent =
             "An error occurred while verifying your account.";
           messageElement.classList.add("error");
