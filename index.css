@@ -605,6 +605,19 @@
   color: #505050;
 }
 
+.msgContainer {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  text-align: center;
+  height: 90vh;
+}
+.message {
+  color: "#000";
+  font-size: 40px;
+  margin: auto;
+}
+
 @media (max-width: 600px) {
   * {
     margin: 0;
